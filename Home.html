@@ -1,36 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>solicitor</title>
     <link href="Style/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="style/Style.css">
 </head>
+
 <body>
     <header>
-        <div class="flex-container">
+        <div id="header" class="flex-container">
             <div class="logo">
                 <h2>Solicitor</h2>
-            
             </div>
-          <div class="nav">
-            <ul class="list">
-                <li><a class="link" href="#">Home</a></li>
-                <li><a class="link" href="#">Practicing Area <i class="fas fa-chevron-down fa-sm"></i></a></li>
-                <li><a class="link" href="#"> Services</a></li>
-                <li><a class="link" href="#">About</a></li>
-                <li><a class="link" href="#">Contact Us</a></li>
-              </ul>
-          </div>
-        <div class="phone">
-             
-             <p class="phoneicon"><i class="fas fa-phone-alt"></i>123-489-9381</p></div>
-        </header>
-    <main></main>
-    <footer></footer>
-</body>
-</html>
+            <div class="nav">
+                <ul class="list">
+                    <li><a class="link" href="#">Home</a></li>
+                    <li id="showlist"><a class="link" href="#">Practicing Area <i
+                                class="fas fa-chevron-down fa-sm fa-2x"></i></a>
+                        <div class="tdroplist">
+                            <ul class="droplist">
+                                <li><a class="droplink" href="#"> Menu one</a></li>
+                                <br />
+                                <li><a class="droplink" href="#">Menu two</a></li>
+                                <br />
+                                <li><a class="droplink" href="#">Dropdoen <i class="fas fa-chevron-right fa-xs"></i></a>
+                                    <div></div>
+                                    <!-- <ul>   <li><a class="link" href="#">sub menu one</a></li>
+                                <li><a class="link" href="#">sub menu two</a></li>
+                                <li><a class="link" href="#">sub menu three</a></li>
+                            </ul> -->
+                                </li>
+                        </div>
+                    </li>
+                    <li><a class="link" href="#"> Services</a></li>
+                    <li><a class="link" href="#">About</a></li>
+                    <li><a class="link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="phone">
+                <p><span class="phoneicon"><i class="fas fa-phone-alt"></i></span>123-489-9381</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="scr1" class="flex-container">
+            <div class="itemssctr1 ">
+                <h1 style="font-size: xx-large; ">Meet all your investigative and litigation needs</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim pariatur similique debitis vel
+                    nisi qui reprehenderit totam? Quod maiores.</p>
+                <span class="animation-element slide-up">
+                    <button class="btn btn1 subject">Our Services</button>
+                    <button class="btn btn2 subject">Contact us</button>
+                </span>
+            </div>
 
+        </div>
+
+        <div id="scr2" class="flex-container">
+            <div class="itemssctr2">
+                <h1>I'm Jon Campbell</h1>
+                <p style="opacity:0.7;">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.
+                    <br />
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+                <span class="animation-element slide-up">
+                    <button class="btn btn1 subject">Our Services</button>
+                </span>
+            </div>
+            <div class=" itemssctr2 animation-element slide-up">
+
+                <div class="image"></div>
+                <span class="shape subject"></span>
+            </div>
+        </div>
+
+        <div id="scr2" class="scr3 flex-container animation-element slide-up">
+            <span class="ourS">
+                <h2>Our Services</h2>
+            </span>
+            <div class="itemssctr3 subject">
+
+                <span><i class="iconS far fa-smile-wink fa-2x"></i></span>
+                <h3>Councel</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </span>
+            </div>
+
+
+            <div class="itemssctr3 subject">
+
+                <span><i class="iconS fas fa-gavel fa-2x"></i></span>
+                <h3>Legal Dept</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+            </div>
+
+            <div class="itemssctr3 subject">
+
+                <span><i class="iconS fas fa-balance-scale fa-2x"></i></span>
+                <h3>Compliance</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+
+            <div class="itemssctr3 subject">
+
+                <span><i class="iconS fas fa-fingerprint fa-2x"></i></span>
+                <h3>Identity</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+
+            <div class="itemssctr3 subject">
+
+                <span><i class="iconS fas fa-archway fa-2x"></i></span>
+                <h3>Hall of Justice</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+
+            <div class="itemssctr3 subject">
+
+                <span><i class="iconS fas fa-book fa-2x"></i></span>
+                <h3>Law Abiding</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+        </div>
+
+
+        <div id="scr2" class="flex-container">
+            <div class="ourS">
+                <h2>Security Consultants</h2>
+            </div>
+
+            <div class=" itemssctr4">
+                <div class="Security_Consultants_img"></div>
+            </div>
+            <div class="itemssctr4">
+                <h1>I'm Jon Campbell</h1>
+                <p style="opacity:0.7;">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.
+                    <br />
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                </p>
+                <span class="animation-element slide-up">
+                    <button class="btn btn1 subject">Our Services</button>
+                </span>
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <script src="./JS/Index.js"></script>
+</body>
+
+</html>

@@ -1,49 +1,256 @@
-body{
-    background-color: black;
-    color: white;
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
-
+#header {
+  position: relative;
+  z-index: 2;
+}
 .flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .nav{
-    align-items: center;
-  }
-  .list{
-    list-style-type: none;
-  }
-  li {
-    display: inline;
-  }
-  .link{
-      color: white;
-      text-decoration: none;
-      margin: 10px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  flex-wrap: wrap;
+}
+.nav {
+  align-items: center;
+}
+.list {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  opacity: 0.8;
+}
+.link:hover {
+  opacity: 1;
+}
+.phone {
+  margin-left: 150px;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  margin-right: 150px;
+}
+.phoneicon {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.phoneicon:hover {
+  box-shadow: inset 0px 0px 0px 3px white;
+}
+/*droplist*/
+.tdroplist {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  height: 120px;
+  width: 150px;
+  margin: 30px 0 0 60px;
+  border-radius: 15px;
+  z-index: 1;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+.droplist {
+  position: absolute;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  margin: 15px 0 0 50px;
+}
+.droplist li {
+  margin: 5px 0 0 0;
+}
+.droplink {
+  color: white;
+  text-decoration: none;
+}
+.droplink:hover {
+  color: #78c4d4;
+}
+.droplist li {
+  margin: 8px 0 8px 0;
+}
+/*screen*/
+#scr1 {
+  position: relative;
+  padding: 0;
+  margin: -109px 0 0 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#scr1::before {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  content: "";
+  top: 0;
+  background-image: url("../assets/emre-aliriz-2rhz3Nuq12c-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  opacity: 0.4;
+}
 
-  .phone{
-      margin-left: 150px;
-      align-items: center;
-      justify-content: center;
-  }
-  .logo{
-    margin-right: 150px;
+.itemssctr1 {
+  position: relative;
+  padding: 30px;
+  width: 30vw;
+  z-index: 2;
+  opacity: 1;
+  margin: 0 0 0 0;
 }
-.phoneicon{
-    align-items: center;
-    justify-content: center;
+.btn {
+  border-radius: 10px;
+  width: 14vw;
+  height: 50px;
 }
-.phoneicon:hover{
-    stroke: white;
+
+.btn1 {
+  border: none;
+  color: white;
+  background-color: #276678;
 }
-.fa-phone-alt{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255,0.5);
+.btn2 {
+  border: solid 1px white;
+  color: white;
+  background-color: Transparent;
+}
+
+.slide-up .subject {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.slide-up.in-view .subject {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.subject {
+  -moz-transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+#scr2 {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  right: 0;
+  margin: 0 0 0 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemssctr2 {
+  padding: 30px;
+  margin: 0 0 0 0;
+  position: relative;
+  width: 30vw;
+  justify-content: center;
+}
+
+.image {
+  width: 35vw;
+  height: 35vw;
+  background-image: url("../assets/emre-aliriz-2rhz3Nuq12c-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.shape {
+  position: absolute;
+  z-index: -1;
+  height: 30vh;
+  width: 50vw;
+  bottom: 0px;
+  left: -10px;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+/**/
+.ourS {
+  width: 100vw;
+  padding: 30px;
+}
+.scr3 {
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.itemssctr3 {
+  position: relative;
+
+  width: 30vw;
+  z-index: 2;
+  opacity: 1;
+  margin: 0 0 0 0;
+}
+.iconS {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1687a7;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemssctr4 {
+  padding: 0;
+  margin: 30px;
+  position: relative;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+}
+.Security_Consultants_img {
+  width: 30vw;
+  height: 25vw;
+  background-image: url("../assets/bill-oxford-OXGhu60NwxU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }

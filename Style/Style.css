@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .nav{
+    align-items: center;
+  }
+  .list{
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+  }
+  .link{
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+  }
+
+  .phone{
+      margin-left: 150px;
+      align-items: center;
+      justify-content: center;
+  }
+  .logo{
+    margin-right: 150px;
+}
+.phoneicon{
+    align-items: center;
+    justify-content: center;
+}
+.phoneicon:hover{
+    stroke: white;
+}
+.fa-phone-alt{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255,0.5);
+}

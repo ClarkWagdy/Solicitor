@@ -215,8 +215,11 @@ li {
 
 /**/
 .ourS {
-  width: 100vw;
+  width: 100%;
   padding: 30px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 .scr3 {
   background-color: rgb(255, 255, 255, 0.1);
@@ -253,4 +256,26 @@ li {
   background-image: url("../assets/bill-oxford-OXGhu60NwxU-unsplash.jpg");
   background-size: cover;
   background-position: center;
+}
+
+
+/**/
+
+.sections{
+  margin-bottom: 5px;
+  
+  padding: 0;
+  margin: 0;
+  width: 30vw;
+  text-align: center;
+  justify-content: center;
+}
+.seclink{
+  color: white;
+  text-decoration: none;
+  opacity: 0.4;
+}
+.seclink:hover,
+.seclink:focus{
+opacity: 1;
 }

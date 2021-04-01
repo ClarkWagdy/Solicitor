@@ -64,7 +64,18 @@ li {
   position: absolute;
   height: 120px;
   width: 150px;
-  margin: 30px 0 0 60px;
+  margin: 60px 0 0 60px;
+  border-radius: 15px;
+  z-index: 1;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+.tdroplist2 {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  height: 120px;
+  width: 150px;
+  margin:-10px 0 0 120px;
   border-radius: 15px;
   z-index: 1;
   background-color: rgb(255, 255, 255, 0.4);
@@ -74,9 +85,10 @@ li {
   z-index: 5;
   margin: 0;
   padding: 0;
-  top: 50%;
-  margin: 15px 0 0 50px;
+top:15%;
+margin: 15px 0 0 25px;
 }
+
 .droplist li {
   margin: 5px 0 0 0;
 }
@@ -274,8 +286,147 @@ li {
   color: white;
   text-decoration: none;
   opacity: 0.4;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  border:none;
+  background-color: transparent;
 }
 .seclink:hover,
-.seclink:focus{
+.seclink:focus,.seclink:active{
 opacity: 1;
+border:none;
+outline: none;
 }
+
+
+.d-n{
+  display:none;
+}
+.d-b{
+  display: block;
+}
+
+#scr6{
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  right: 0;
+  margin: 0 0 0 0;
+  height: 130%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 44, 44);
+}
+.rectangle{
+  margin: 10px;
+  width: 29vw;
+  height: 10vw;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.rectangle:hover{
+  background-color: cornflowerblue;
+  color: black;
+}
+.num{
+  opacity: 0.5;
+ margin-right: 25px;
+}
+.ar{
+margin-top: 80px;opacity: 0.5;
+}
+.haf{
+  width: 45%;
+ height: 100%;
+ padding:20px;
+margin: 0;
+}
+.Testimonialspeopel{
+  margin: 0;
+  padding:0;
+  width: 100%;
+  height: 20%;
+justify-content: flex-start;
+display: flex;
+flex-direction: column;
+  }
+
+  .item{
+    width: 50px;
+  }
+ .mark{
+  border-radius: 25px;
+  border:none;
+  color: white;
+  background-color: transparent;
+  }
+  .mark:hover{
+   opacity: 0.8;
+ 
+  }
+ .mark:focus,.mark:active{
+    background-color: rgb(255, 255, 255,0.1);
+    color: wheat;
+    border:none;
+    outline: none;
+
+  }
+  .po{
+    cursor: pointer;
+  }
+  .image2 {
+    width: 35vw;
+    height: 35vw;
+    background-image: url("../assets/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .image3 {
+    width: 35vw;
+    height: 35vw;
+    background-image: url("../assets/bill-oxford-OXGhu60NwxU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .inpu{
+width: 100%;
+height: 45px;
+color: white;
+border: none;
+background-color: rgb(255, 255, 255,0.1);
+border-radius: 2px;
+  }
+  .texa{
+   
+    color: white;
+    border: none;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 2px;
+  }
+  .texa:focus, .texa:active,
+  .inpu:focus,.inpu:active{
+    background-color: rgb(255, 255, 255,0.2);
+    border:none;
+    outline: none;
+  }
+  .flex-c{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .flink{
+    opacity: 0.8;
+     font-size: 12px; 
+     color: white;
+     border-bottom: 5px solid teal;
+     text-decoration:   none;
+opacity: 0.4;
+  }
+  .flink:hover{
+    opacity: 1;
+  }
